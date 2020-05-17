@@ -118,7 +118,7 @@ class Ui_MainWindow(object):
         self.icon = QtWidgets.QLabel(self.centralwidget)
         self.icon.setGeometry(QtCore.QRect(330, 0, 61, 41))
         self.icon.setText("")
-        self.icon.setPixmap(QtGui.QPixmap("Logo_round_0-5.bmp"))
+        self.icon.setPixmap(QtGui.QPixmap("Logo.bmp"))
         self.icon.setScaledContents(True)
         self.icon.setObjectName("icon")
         self.title = QtWidgets.QLabel(self.centralwidget)
@@ -192,7 +192,7 @@ class Ui_MainWindow(object):
 
         options = webdriver.ChromeOptions()
         options.binary_location = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
-        driver_path = "E:/Python/webScrapping/chromedriver.exe"
+        driver_path = "chromedriver.exe"
         options.add_argument('--disable-extensions')
         options.add_argument('--profile-directory=Default')
         options.add_argument("disable-infobars")
